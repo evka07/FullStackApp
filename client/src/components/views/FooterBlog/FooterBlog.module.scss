@@ -1,0 +1,112 @@
+@import '../../../styles/settings.scss';
+
+.blog {
+  background-color: $color-primary;
+  margin-top: 40px;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  a {
+    font-family: $font-text;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+    color: $color-text-bright;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+}
+
+.blockTitle {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #0dcaf0;
+  font-family: "Times New Roman"
+}
+
+.details {
+  text-align: end;
+}
+
+.detailsTitle {
+  margin-top: 24px;
+  font-size: 25px;
+  color: #0dcaf0;
+}
+
+.number {
+  color: $color-text-bright;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 867px) {
+  .blog {
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .details {
+    padding-left: 0;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .block a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .blog {
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .block {
+    padding: 10px 10px;
+  }
+
+  .details {
+    padding-top: 1rem;
+  }
+
+  .blockTitle {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  .detailsTitle {
+    font-size: 25px;
+  }
+
+  .number {
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+}

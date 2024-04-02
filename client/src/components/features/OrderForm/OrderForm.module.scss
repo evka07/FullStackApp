@@ -1,0 +1,20 @@
+@import '../../../styles/settings.scss';
+
+.orderTitle{
+  color: $color-text-light;
+  font-size: 40px;
+  padding: 5px 0 15px 0;
+}
+
+
+.amount {
+  font-family: $font-text;
+  color: $color-text-light;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.border {
+  border-top: 1px solid $color-text-light;
+  padding-bottom: 10px;
+}
